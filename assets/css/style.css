@@ -197,6 +197,23 @@ html{
    padding: 11px 16px;
    border-bottom:1px solid #ddd ;
 }
+.tickets-list .sold-out{
+   background-color: #f44336;
+   color: #fff;
+   padding: 3px 4px;
+   margin-left: 16px;
+}
+.tickets-list .quatity{
+ float:right ;
+ width: 24px;
+ height: 24px;
+ background-color: #000;
+ color: #fff;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 24px;
+ margin-top: -3px;
+}
 /* End content  */
 
 /* Begin footer */
