@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
+    <link rel="icon" href="./assets/img/slider/icon-web.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons.css">
 </head>
@@ -18,9 +19,9 @@
 
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
@@ -52,7 +53,7 @@
         <!-- Begin content -->
         <div id="content">
             <!-- 1.About -->
-            <div class="about-text">
+            <div id="band"  class="content-section">
                 <h2 class="section-heading">
                     THE BAND
                 </h2>
@@ -69,26 +70,25 @@
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                 </div>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/slider/slider2.jpg" alt="Name" class="membr-avatar">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/slider/slider2.jpg" alt="Name" class="membr-avatar">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/slider/slider2.jpg" alt="Name" class="membr-avatar">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             <!-- End about -->
             <!-- Bengin Tour -->
-            <div class="tour-section">
-                <div class="about-text">
+            <div id="tour" class="tour-section">
+                <div class="content-section">
                     <h2 class="section-heading text-while">
                         TOUR DATES
                     </h2>
@@ -102,8 +102,8 @@
 
                     </ul>
                     <!-- Place -->
-                    <div class="place-list">
-                        <div class="place-items">
+                    <div class="row place-list">
+                        <div class="col col-third">
                             <img src="./assets/img/slider/place1.jpg" alt="New your" class="place-img">
                             <div class="place-body">
 
@@ -111,11 +111,11 @@
                                 <p class="time">Fri 27 Nov 2016</p>
                                 <p class="text-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn-buy s-full-width js-buy-ticket">Buy tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
-                        <div class="place-items">
+                        <div class="col col-third">
                             <img src="./assets/img/slider/place2.jpg" alt="New your" class="place-img">
                             <div class="place-body">
 
@@ -123,11 +123,11 @@
                                 <p class="time">Sat 28 Nov 2016</p>
                                 <p class="text-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn-buy s-full-width js-buy-ticket">Buy tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
-                        <div class="place-items">
+                        <div class="col col-third">
                             <img src="./assets/img/slider/place3.jpg" alt="New your" class="place-img">
                             <div class="place-body">
 
@@ -135,31 +135,71 @@
                                 <p class="time">Sun 29 Nov 2016</p>
                                 <p class="text-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn-buy s-full-width js-buy-ticket">Buy tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
+                      
+                    
                     </div>
                 </div>
             </div>
             <!--End Tour-->
 
             <!--Begin contact-->
-            <div class="about-text">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
                 <p class="section-condrestion">
                     Fan? Drop a note!
                 </p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name=""  id="" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                        <input type="email" name=""  id="" placeholder="Email" required class="form-control">
+                                </div>
+                     
+                            </div>
+                            <div class="row mt-8">
+                           <div class="col col-full">
+                            <input type="text" name=""  id="" placeholder="Message" required class ="form-control">
+                           </div>
+                            </div>
+                            <input class="btn pull-right mt-16" type="submit" required value="SEND">
+                        </form>
+                    </div>
+                </div>
+        
                 <!--End contact-->
+            </div>
+            <!-- End map-section -->
+            <div class="map-section">
+                <img src="./assets/img/slider/map.jpg" alt="Map" class="">
             </div>
         </div>
         <!-- End content -->
 
         <!-- Begin footer -->
         <div id="footer">
-
+        <div class="socials-list">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-instagram"></i></a>
+            <a href="#"><i class="ti-themify-favicon"></i></a>
+            <a href="#"><i class="ti-pinterest"></i></a>
+            <a href="#"><i class="ti-twitter-alt"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+        <p>Powered by <a href="#">w3.css</a></p>
         </div>
         <!--End Footer-->
     </div>
